@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(110, 188, 219);
+    font-family: 'Caveat', cursive;
+    background-image: url(/img/меню\ небо-01.png);
+    background-size: cover;
+}
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header__btn-prev{
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    color:white ;
+    border: solid 2px white;
+    border-radius: 70px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 227, 243);
+    transition: 0.4s;
+}
+.header__btn-prev:hover{
+    background-color: #fff;
+    color: rgb(155, 227, 243);
+    font-size: 60px;
+    transition: 0.2s;
+}
+.header__title{
+    flex-grow:1;
+    text-align:center;
+    margin-left: 80px;
+    color: rgb(224, 240, 255); 
+    font-size: 50px;
+    padding-top: 5px;
+}
+.score{
+    display: block;
+    color: white; 
+    font-size: 50px;
+    padding-top: 5px;
+}
+.best_score{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(213, 229, 247);
+    font-size: 30px;
+    padding-top: 5px;
+}
+.game-section__container{
+display: flex;
+flex-direction: column;
+}
+.game-menu__btn{
+    height: 50px;
+    width: 300px;
+    color:white ;
+    border: solid 2px rgb(99, 142, 171);
+    border-radius: 10px;
+    margin: 30px auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 203, 244);
+    transition: 0.7s;
+}
+.game-menu__btn:hover{
+    background-color: #fff;
+    color: rgb(80, 173, 207);
+    font-size: 32px;
+    transition: 0.2s;
+}
+.game-menu__title {
+    color: #fff;
+    font-size: 35px;
+    margin: auto ;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.game-field{
+    margin: auto;
+    width: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.game-card{
+    width: 132px;
+    height: 230px;
+    background-image: url(/img/карточка.new-01.png);
+    background-size:cover ;
+    margin: 15px;
+    border-radius: 20px;
+    transform: perspective(150px) rotateY(0deg);
+    transition: 0.5s;
+}
+.type1{
+    background-image: url(/img/крест-01.png);
+}
+.type2{
+    background-image: url(/img/библия-01.png);
+}
+.type3{
+    background-image: url(/img/карточка.свеча-01.png);
+}
+.type4{
+    background-image: url(/img/кукла-01.png);
+}
+.type5{
+    background-image: url(/img/кулич-01.png);
+}
+.type6{
+    background-image: url(/img/святая\ вода-01.png);
+}
+.type7{
+    background-image: url(/img/шарик\с\крестом-01.png);
+}
+.type8{
+    background-image: url(/img/яйца-01.png);
+}
+.flip{
+    background-color: rgb(228, 167, 167);
+    transform: perspective(100px) rotateY(-180deg);
+    transition: 0.5s;
+}
